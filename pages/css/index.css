@@ -1,0 +1,590 @@
+*, *::before, *::after {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body {
+    background-color:rgba(247, 253, 252, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    height: 160vh;
+}
+
+.first {
+    height: 142vh;
+    margin-inline: 10%;
+    background-color: rgba(247, 253, 252, 1);
+}
+
+.first > img {
+    margin-block-start: 20px;
+    height: 50px;
+    margin-inline-start: -10px;
+}
+
+
+p:nth-of-type(2){
+    display: none;
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading p {
+    color: #737373;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 10%;
+    border: 1px solid rgba(4, 8, 19, 0.1);
+    background-color: white;
+}
+ 
+form {
+    margin-inline-start: 10px;
+    padding-block-start: 10px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form label {
+    display: block;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+}
+
+input {
+    padding-block: 5px;
+    padding-inline-start: 10px;
+}
+
+select {
+    padding-block: 5px;
+    padding-inline-end: 38%;
+}
+
+input#date {
+    padding-inline-end: 21%;
+}
+
+
+/* input select {
+    margin-block-end: 10px;
+} */
+/* 
+#name {
+    margin-inline-end: 50px;
+    margin-block-end: 15px;
+    padding-block-start: 10px;
+    margin-block-start: 7px;
+    padding-inline-start: 7px;
+}
+
+#gender {
+    margin-inline-end: 50px;
+    margin-block-end: 15px;
+}
+
+select#gender {
+    margin-block-start: 7px;
+    padding-inline-end: 82px;
+    padding-block-start: 10px;
+    padding-inline-start: 7px;
+}
+
+#date {
+    margin-inline-end: 50px;
+}
+
+input#date {
+    padding-inline-end: 60px;
+    padding-block-start: 10px;
+    margin-block-start: 7px;
+    margin-block-end: 7px;
+}
+
+input#weight {
+    margin-block-start: 7px;
+    padding-block-start: 10px;
+    margin-block-end: 7px;
+    padding-inline-end: 11px;
+}
+
+#height {
+    margin-inline-end: 20px;
+    margin-block-start: 10px;
+}
+
+input#height {
+    padding-inline-end: 15px;
+    padding-block-end: 7px;
+    margin-block-end: 10px;
+}
+
+label#activity {
+    margin-inline-end: 40px;
+}
+
+select#activity {
+    padding-inline-end: 95px;
+    padding-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+input#password {
+    padding-block-start: 10px;
+    margin-block-end: 10px;
+    padding-inline-end: 20px;
+    position: relative;
+/* } */
+
+.fa-eye {
+    position: relative;
+    left: -25px;
+} 
+
+.btn {
+    margin-inline-start: 60px;
+    
+}
+
+button {
+    background-color: rgba(46, 196, 182, 1);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin-block-end: 10px;
+}
+
+.info {
+    margin-block-start: 15%;
+}
+
+.info a {
+    color:  rgba(46, 196, 182, 1);
+}  
+
+@media (min-width: 375px ) {
+    /* .mobile {
+        margin-block-start: 10px;
+    }
+    
+    .top {
+        margin-inline-end: 7px;
+    }
+    .up {
+        margin-inline-start: 12px;
+    }
+    
+    .down {
+        margin-inline-start: 8px;
+    }
+
+    input#date {
+        margin-block-end: 5%;
+    }
+
+    input#weight {
+        margin-inline-start: 1px;
+        margin-block-end: 5%;
+    }
+
+    .cm {
+        margin-inline-start: 10px;
+    }
+
+    .act {
+        margin-inline-start: 15px;
+    }
+
+    select#activity {
+        margin-block-start: 5%;
+    }
+
+    .pass {
+        margin-inline-start: 15px;
+    }
+
+    input#password {
+        margin-block-start: 5%;
+    /* } */
+
+    /* .fa-eye {
+    } */
+
+    select {
+        padding-inline-end: 35%;
+    }
+
+    button {
+        margin-block-end: 10%;
+    } 
+
+    form {
+        margin-inline-start: 40px;
+        height: 110vh;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    /* .top {
+        margin-inline-start: 4px;
+    }
+
+    label:first-of-type {
+        margin-inline-start: 30px;
+    }
+
+    input#name {
+        margin-inline-start: 30px;
+    }
+
+    .up {
+        margin-inline-start: 30px;
+    }
+    
+    .gen {
+        margin-inline-start: 30px;
+    }
+
+    select#gender {
+        margin-inline-start: 30px;
+    }
+
+    .down {
+        margin-inline-start: 27px;
+    }
+    
+    input#date {
+        margin-inline-start: 27px;
+    }
+
+    .way {
+        margin-inline-start: 27px;
+    }
+
+    input#weight {
+        margin-inline-start: 30px;
+    }
+
+    .cm {
+        margin-inline-start: 27px;
+    }
+
+    input#height {
+        margin-inline-start: 30px;
+    }
+
+    .act {
+        margin-inline-start: 27px;
+    }
+
+    select#activity {
+        margin-inline-start: 30px;
+    }
+
+    .pass {
+        margin-inline-start: 27px;
+    }
+
+    input#password {
+        margin-inline-start: 30px;
+    } */
+
+    .fa-eye {
+        position: relative;
+        left: -8%;
+    }
+
+    select {
+         padding-inline-end: 30%;
+    }
+
+    input#date {
+        padding-inline-end: 16%;
+    }
+    
+    /* button {
+        margin-block-start: 5%;
+    } */ 
+}
+
+@media screen and (min-width: 518px) {  
+    p:nth-of-type(2) {
+        display: block;
+        margin-block-start: 5%;
+    }
+
+    p:nth-child(2) {
+        display: none;
+    }
+
+    body {
+        height: 185vh;
+    }
+    
+    .first {
+        height: 175vh;
+    }    
+
+    form {
+        height: 100vh;
+    }
+
+    select {
+        padding-inline-end: 25%;
+    }
+
+    input#date {
+        padding-inline-end: 15%;
+    }
+
+  
+    /* }
+
+    form {
+        margin-inline-start: 60px;
+    }
+   
+    input#name.right {
+       margin-inline-start: 360px;
+    }
+
+    label.up {
+        margin-inline-start: -18px;
+    }
+
+    input#name.top {
+        position: relative;
+        top: 52px;
+        left: -112px;
+    }
+
+    select#gender {
+        position: relative;
+        top: 52px;
+        left: -90px;
+    }
+
+    input#weight {
+        position: relative;
+        top: 52px;
+        left: -121px;
+    }
+
+    select#activity {
+        position: relative;
+        top: 50px;
+        left: -128px;
+    }
+
+    input#password {
+        position: relative;
+        top: -18px;
+        left: 331px;
+    }
+
+    .fa-eye {
+        margin-inline-start: 385px;
+    }
+
+    label.pass {
+        margin-inline-start: 14px;
+    }
+
+    .right {
+        display: flex;
+        margin-inline-end: -200px;
+    }
+
+    label.down {
+        margin-inline-start: 10px;
+    }
+
+    input#date.right {
+        margin-inline-start: 360px;
+    }
+
+        /* input#height.right {
+        margin-inline-start: 364px;
+        padding-block-start: 10px;
+        margin-block-start: -10px;
+    } */
+
+    
+    button {
+        /* margin-block-start: 10px; */
+        position: relative;
+        top: 25px;
+        padding-inline: 20%;
+        margin-inline-start: 20px;
+        margin-block-end:  30px;
+    } 
+}
+ 
+@media only screen and (min-width: 768px) {
+    button {
+        margin-block-end: 30px;
+        margin-inline-start: 20%;
+    }
+
+    .up {
+        position: relative;
+        top: -12%;
+        left: 65%;
+        height: fit-content;
+    }
+
+    .right {
+        position: relative;
+        top: -13%;
+        left: 65%;
+        height: fit-content;
+    }
+
+    .down {
+        position: relative;
+        top: -12%;
+        left: 65%;
+        height: fit-content;
+    }
+
+    .cm {
+        position: relative;
+        top: -12%;
+        left: 65%; 
+        height: fit-content;
+    }
+
+    select {
+        padding-inline-end: 16%;
+    }
+
+    input#date {
+        padding-inline-end: 8%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    p:nth-of-type(2) {
+        display: block;
+        margin-block-start: 5%;
+    }
+
+    p:nth-child(2) {
+        display: none;
+    }
+  
+    body {
+        border: none;
+        overflow-x: hidden;
+        height: 120vh;
+    }
+    
+    .first {
+        display: flex;
+        align-items: center;
+        height: 110vh;
+        margin-block-end: 10%;
+        border: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    
+    img {
+        position: relative;
+        top: -20%;
+        left: 3%;
+        width: 70px;
+    }
+    
+    .second {
+        /* margin-inline-start: 90px; */
+        height: 100vh;
+        border: 1px solid rgba(255, 255, 255, 1);
+        margin-inline-start: 40px;
+        /* width: 130%; */
+    }
+
+    /* form {
+        margin-block-end: -20%;
+    } */
+    h1 {
+       margin-inline-start: -10px;
+    }
+
+    .heading p {
+        margin-inline-start: -10px;
+    }
+
+    .up {
+        position: relative;
+        left: 50%;
+        top: -12.4%;
+    }
+
+    .down {
+        position: relative;
+        top: -12.4%;
+        left: 50%;
+    }
+
+    .cm {
+        position: relative;
+        left: 50%;
+        top: -12.4%;
+    }
+
+    select {
+        padding-inline-end: 20%;
+    }
+
+    input.right {
+        position: relative;
+        left: 50%;
+        top: -12.4%;
+    }
+
+    input#date {
+        padding-inline-end: 13%;
+    }
+
+    button {
+        margin-block-end: 70px;
+    }
+
+    .terms {
+        margin-block-start: -110px;
+        margin-inline-start: 60px;
+        /* margin-block-end: 120px; */
+    }
+     /* .heading {
+        margin-inline-start: 3%;
+    } */
+
+    /* .heading h1 {
+        width: max-content;
+        margin-inline-start: -70px;
+        margin-block-start: 150px;
+    }
+    
+    .heading p {
+        margin-inline-start: -70px;
+        margin-block-start: 10px;
+    }
+
+    .fa-eye {
+        margin-inline-start: 880px;
+    }
+
+    button {
+        margin-block-end: 75px;
+    }
+
+    .terms {
+        margin-inline-start: 120px;
+        margin-block-start: -90px;
+    }  */
+}   
